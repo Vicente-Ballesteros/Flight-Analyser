@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_fc0a709b7bafc342ea51d97eb92203ed {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_fc0a709b7bafc342ea51d97eb92203ed" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_fc0a709b7bafc342ea51d97eb92203ed = L.map(
+                "map_fc0a709b7bafc342ea51d97eb92203ed",
+                {
+                    center: [54.0, -2.0],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b19e4d5ea92a289b5408a5e2219de77a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_b19e4d5ea92a289b5408a5e2219de77a.addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+            var circle_marker_d8684ab2b23631fa1f441b0cf9472d8e = L.circleMarker(
+                [50.7961, -3.7506],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_c60cd33a01fbf610cdd9d99a696f56f2 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3a295eee5c540bd1fa20bc1486d35c0d = $(`<div id="html_3a295eee5c540bd1fa20bc1486d35c0d" style="width: 100.0%; height: 100.0%;"><b>FDX5225</b><br>Country: United States<br>Altitude: 32002 ft<br>Speed: 470 kts<br>Phase: cruising</div>`)[0];
+                popup_c60cd33a01fbf610cdd9d99a696f56f2.setContent(html_3a295eee5c540bd1fa20bc1486d35c0d);
+            
+        
+
+        circle_marker_d8684ab2b23631fa1f441b0cf9472d8e.bindPopup(popup_c60cd33a01fbf610cdd9d99a696f56f2)
+        ;
+
+        
+    
+    
+            var circle_marker_5db5235b864edf184af8f3d90f97d23d = L.circleMarker(
+                [53.52, -2.9518],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_350bd2bf27375739ffa061e4fc89b46f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a2af76e9930271a9d50c236873e86a9b = $(`<div id="html_a2af76e9930271a9d50c236873e86a9b" style="width: 100.0%; height: 100.0%;"><b>EZY92HU</b><br>Country: United Kingdom<br>Altitude: 9125 ft<br>Speed: 307 kts<br>Phase: descending</div>`)[0];
+                popup_350bd2bf27375739ffa061e4fc89b46f.setContent(html_a2af76e9930271a9d50c236873e86a9b);
+            
+        
+
+        circle_marker_5db5235b864edf184af8f3d90f97d23d.bindPopup(popup_350bd2bf27375739ffa061e4fc89b46f)
+        ;
+
+        
+    
+    
+            var circle_marker_504282173b51432b5b3c834aadf4d5f8 = L.circleMarker(
+                [53.1447, -1.8179],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_df0fc9b4d3726c6d5c304515614988f3 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0183fcfe99c3ede84e2d0dd56986411c = $(`<div id="html_0183fcfe99c3ede84e2d0dd56986411c" style="width: 100.0%; height: 100.0%;"><b>TOM4MW</b><br>Country: United Kingdom<br>Altitude: 9950 ft<br>Speed: 258 kts<br>Phase: descending</div>`)[0];
+                popup_df0fc9b4d3726c6d5c304515614988f3.setContent(html_0183fcfe99c3ede84e2d0dd56986411c);
+            
+        
+
+        circle_marker_504282173b51432b5b3c834aadf4d5f8.bindPopup(popup_df0fc9b4d3726c6d5c304515614988f3)
+        ;
+
+        
+    
+    
+            var circle_marker_1c068066be1b6682a9d1236fb8089101 = L.circleMarker(
+                [54.7429, -1.6626],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_364200b64a1b3f748dd80c7d0c8ea70d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_79b5477b819ba67d9f162e6092f85cfc = $(`<div id="html_79b5477b819ba67d9f162e6092f85cfc" style="width: 100.0%; height: 100.0%;"><b>EXS71C</b><br>Country: United Kingdom<br>Altitude: 8200 ft<br>Speed: 264 kts<br>Phase: descending</div>`)[0];
+                popup_364200b64a1b3f748dd80c7d0c8ea70d.setContent(html_79b5477b819ba67d9f162e6092f85cfc);
+            
+        
+
+        circle_marker_1c068066be1b6682a9d1236fb8089101.bindPopup(popup_364200b64a1b3f748dd80c7d0c8ea70d)
+        ;
+
+        
+    
+    
+            var circle_marker_0fe5ba87d3e51e21f739e75cf23f96d6 = L.circleMarker(
+                [50.3927, -0.7097],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_1ee9c948beddb852bfd9777978730119 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f7ca81ff6dc9108f7caacea6751565d1 = $(`<div id="html_f7ca81ff6dc9108f7caacea6751565d1" style="width: 100.0%; height: 100.0%;"><b>EZY95MW</b><br>Country: United Kingdom<br>Altitude: 19026 ft<br>Speed: 247 kts<br>Phase: descending</div>`)[0];
+                popup_1ee9c948beddb852bfd9777978730119.setContent(html_f7ca81ff6dc9108f7caacea6751565d1);
+            
+        
+
+        circle_marker_0fe5ba87d3e51e21f739e75cf23f96d6.bindPopup(popup_1ee9c948beddb852bfd9777978730119)
+        ;
+
+        
+    
+    
+            var circle_marker_155856886f8949f563fb276eaca0a071 = L.circleMarker(
+                [55.9104, -4.1741],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_a2c7714944cead6003d92abc792184b0 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_abffe81aa5d90638b4b41afb044b5ef8 = $(`<div id="html_abffe81aa5d90638b4b41afb044b5ef8" style="width: 100.0%; height: 100.0%;"><b>EXS69PM</b><br>Country: United Kingdom<br>Altitude: 5375 ft<br>Speed: 240 kts<br>Phase: descending</div>`)[0];
+                popup_a2c7714944cead6003d92abc792184b0.setContent(html_abffe81aa5d90638b4b41afb044b5ef8);
+            
+        
+
+        circle_marker_155856886f8949f563fb276eaca0a071.bindPopup(popup_a2c7714944cead6003d92abc792184b0)
+        ;
+
+        
+    
+    
+            var circle_marker_ede72a6e1101cce4a3ece9a6df7d64ce = L.circleMarker(
+                [52.376, -7.23],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_d940f462822e5c2fb4850edd8da2a824 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_161de3ef2e2558645a24afaeb7215d0e = $(`<div id="html_161de3ef2e2558645a24afaeb7215d0e" style="width: 100.0%; height: 100.0%;"><b>EZY24TQ</b><br>Country: United Kingdom<br>Altitude: 37002 ft<br>Speed: 382 kts<br>Phase: cruising</div>`)[0];
+                popup_d940f462822e5c2fb4850edd8da2a824.setContent(html_161de3ef2e2558645a24afaeb7215d0e);
+            
+        
+
+        circle_marker_ede72a6e1101cce4a3ece9a6df7d64ce.bindPopup(popup_d940f462822e5c2fb4850edd8da2a824)
+        ;
+
+        
+    
+    
+            var circle_marker_3476476ac0a14baea814c7e407598a49 = L.circleMarker(
+                [51.8821, 0.13],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_e6de82c83f327b729aaa29ca1e9ee9f8 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7cc364bde28531ac39b5a11050a343df = $(`<div id="html_7cc364bde28531ac39b5a11050a343df" style="width: 100.0%; height: 100.0%;"><b>EXS9QS</b><br>Country: United Kingdom<br>Altitude: 27601 ft<br>Speed: 300 kts<br>Phase: descending</div>`)[0];
+                popup_e6de82c83f327b729aaa29ca1e9ee9f8.setContent(html_7cc364bde28531ac39b5a11050a343df);
+            
+        
+
+        circle_marker_3476476ac0a14baea814c7e407598a49.bindPopup(popup_e6de82c83f327b729aaa29ca1e9ee9f8)
+        ;
+
+        
+    
+    
+            var circle_marker_9ff700f6232fc81cbdc1f0d4b75de623 = L.circleMarker(
+                [53.9418, -0.5236],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_294bbe65eb53f6cebef10e312e0f2a5e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6393d419bb99d1e1838ca3043eabb342 = $(`<div id="html_6393d419bb99d1e1838ca3043eabb342" style="width: 100.0%; height: 100.0%;"><b>EZY5616</b><br>Country: United Kingdom<br>Altitude: 30301 ft<br>Speed: 343 kts<br>Phase: descending</div>`)[0];
+                popup_294bbe65eb53f6cebef10e312e0f2a5e.setContent(html_6393d419bb99d1e1838ca3043eabb342);
+            
+        
+
+        circle_marker_9ff700f6232fc81cbdc1f0d4b75de623.bindPopup(popup_294bbe65eb53f6cebef10e312e0f2a5e)
+        ;
+
+        
+    
+    
+            var circle_marker_a5528c32794062c0669e5e65df9bc161 = L.circleMarker(
+                [51.3442, -1.0687],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_0dc0f8cd6cc301f137fd2729bffb5282 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e6f9cf14dc11606525f1af44dd66fea8 = $(`<div id="html_e6f9cf14dc11606525f1af44dd66fea8" style="width: 100.0%; height: 100.0%;"><b>TOM57B</b><br>Country: United Kingdom<br>Altitude: 29751 ft<br>Speed: 325 kts<br>Phase: descending</div>`)[0];
+                popup_0dc0f8cd6cc301f137fd2729bffb5282.setContent(html_e6f9cf14dc11606525f1af44dd66fea8);
+            
+        
+
+        circle_marker_a5528c32794062c0669e5e65df9bc161.bindPopup(popup_0dc0f8cd6cc301f137fd2729bffb5282)
+        ;
+
+        
+    
+    
+            var circle_marker_c109111e4ff1015c97e2d7957da46b4f = L.circleMarker(
+                [53.0952, -0.1261],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_175708367fcacf9835134c8c4a1b0195 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d7890d439e5a73bf04cb62722069e609 = $(`<div id="html_d7890d439e5a73bf04cb62722069e609" style="width: 100.0%; height: 100.0%;"><b>CMB556</b><br>Country: United States<br>Altitude: 34002 ft<br>Speed: 511 kts<br>Phase: cruising</div>`)[0];
+                popup_175708367fcacf9835134c8c4a1b0195.setContent(html_d7890d439e5a73bf04cb62722069e609);
+            
+        
+
+        circle_marker_c109111e4ff1015c97e2d7957da46b4f.bindPopup(popup_175708367fcacf9835134c8c4a1b0195)
+        ;
+
+        
+    
+    
+            var circle_marker_06aaca1d8e889cfa0d3f54ade17c8e0d = L.circleMarker(
+                [52.2788, -1.554],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_e2158884aa9752f8a6fee95fe8ea67cd = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_37e8ae0f086f1cdd3d90b0613aa04d91 = $(`<div id="html_37e8ae0f086f1cdd3d90b0613aa04d91" style="width: 100.0%; height: 100.0%;"><b>RYR66NL</b><br>Country: Ireland<br>Altitude: 3950 ft<br>Speed: 166 kts<br>Phase: cruising</div>`)[0];
+                popup_e2158884aa9752f8a6fee95fe8ea67cd.setContent(html_37e8ae0f086f1cdd3d90b0613aa04d91);
+            
+        
+
+        circle_marker_06aaca1d8e889cfa0d3f54ade17c8e0d.bindPopup(popup_e2158884aa9752f8a6fee95fe8ea67cd)
+        ;
+
+        
+    
+    
+            var circle_marker_6482a3ae096d36c3dff3a2a69a13de31 = L.circleMarker(
+                [54.6432, 1.7529],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_647096c0133c08c0bea0653f9a24b5ed = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3092eb8a4635ca3327bbb7f0d5412504 = $(`<div id="html_3092eb8a4635ca3327bbb7f0d5412504" style="width: 100.0%; height: 100.0%;"><b>EXS110</b><br>Country: United Kingdom<br>Altitude: 36002 ft<br>Speed: 391 kts<br>Phase: cruising</div>`)[0];
+                popup_647096c0133c08c0bea0653f9a24b5ed.setContent(html_3092eb8a4635ca3327bbb7f0d5412504);
+            
+        
+
+        circle_marker_6482a3ae096d36c3dff3a2a69a13de31.bindPopup(popup_647096c0133c08c0bea0653f9a24b5ed)
+        ;
+
+        
+    
+    
+            var circle_marker_d61fd549954317b9fe0655918b25e9c5 = L.circleMarker(
+                [52.7669, -6.3902],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_dae4b7e19ecbf9db1004bba97597b4b4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1a2c221c97c72ca96abf389d4908ee47 = $(`<div id="html_1a2c221c97c72ca96abf389d4908ee47" style="width: 100.0%; height: 100.0%;"><b>EXS35MD</b><br>Country: United Kingdom<br>Altitude: 35027 ft<br>Speed: 405 kts<br>Phase: cruising</div>`)[0];
+                popup_dae4b7e19ecbf9db1004bba97597b4b4.setContent(html_1a2c221c97c72ca96abf389d4908ee47);
+            
+        
+
+        circle_marker_d61fd549954317b9fe0655918b25e9c5.bindPopup(popup_dae4b7e19ecbf9db1004bba97597b4b4)
+        ;
+
+        
+    
+    
+            var circle_marker_c163a7ca924aeb59929e3e43956efa5d = L.circleMarker(
+                [54.6904, -6.0935],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_95b89bf6605b38702c930f92e527be37 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_9d62bc819140e6416677cd01a1b6146a = $(`<div id="html_9d62bc819140e6416677cd01a1b6146a" style="width: 100.0%; height: 100.0%;"><b>RUK57FM</b><br>Country: United Kingdom<br>Altitude: 1200 ft<br>Speed: 140 kts<br>Phase: descending</div>`)[0];
+                popup_95b89bf6605b38702c930f92e527be37.setContent(html_9d62bc819140e6416677cd01a1b6146a);
+            
+        
+
+        circle_marker_c163a7ca924aeb59929e3e43956efa5d.bindPopup(popup_95b89bf6605b38702c930f92e527be37)
+        ;
+
+        
+    
+    
+            var circle_marker_acb160c3d4a3ab013a7a9320d989d4a9 = L.circleMarker(
+                [50.7849, -0.5479],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_0933dff8c10e74566e6774c6c47de1eb = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_ee7ee23ad82c6c793ba03a180c534eab = $(`<div id="html_ee7ee23ad82c6c793ba03a180c534eab" style="width: 100.0%; height: 100.0%;"><b>RUK43KZ</b><br>Country: United Kingdom<br>Altitude: 24726 ft<br>Speed: 384 kts<br>Phase: descending</div>`)[0];
+                popup_0933dff8c10e74566e6774c6c47de1eb.setContent(html_ee7ee23ad82c6c793ba03a180c534eab);
+            
+        
+
+        circle_marker_acb160c3d4a3ab013a7a9320d989d4a9.bindPopup(popup_0933dff8c10e74566e6774c6c47de1eb)
+        ;
+
+        
+    
+    
+            var circle_marker_d76308fffe9b17b50b448430d52a042d = L.circleMarker(
+                [52.9256, 1.3568],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_0461a2c5549d04f62a2e9c188f3f1d4a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a25101958d191238e68b472b946476ad = $(`<div id="html_a25101958d191238e68b472b946476ad" style="width: 100.0%; height: 100.0%;"><b>HYS474</b><br>Country: Republic of Moldova<br>Altitude: 37027 ft<br>Speed: 477 kts<br>Phase: cruising</div>`)[0];
+                popup_0461a2c5549d04f62a2e9c188f3f1d4a.setContent(html_a25101958d191238e68b472b946476ad);
+            
+        
+
+        circle_marker_d76308fffe9b17b50b448430d52a042d.bindPopup(popup_0461a2c5549d04f62a2e9c188f3f1d4a)
+        ;
+
+        
+    
+    
+            var circle_marker_6dab8e862f0e50cb85047315cdc81f65 = L.circleMarker(
+                [50.1182, -1.4265],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_1b1d64abe7cdde348a9894c250897114 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e011cfb1533a260153913d45b6ed6ba7 = $(`<div id="html_e011cfb1533a260153913d45b6ed6ba7" style="width: 100.0%; height: 100.0%;"><b>EXS670</b><br>Country: United Kingdom<br>Altitude: 38002 ft<br>Speed: 370 kts<br>Phase: cruising</div>`)[0];
+                popup_1b1d64abe7cdde348a9894c250897114.setContent(html_e011cfb1533a260153913d45b6ed6ba7);
+            
+        
+
+        circle_marker_6dab8e862f0e50cb85047315cdc81f65.bindPopup(popup_1b1d64abe7cdde348a9894c250897114)
+        ;
+
+        
+    
+    
+            var circle_marker_debdc321b4f7a253c6fb62e4f65c7352 = L.circleMarker(
+                [52.7024, -1.0125],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_bf5c14324cc66100417ed9b26aa10b2a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8099cda0d878959cd95c1c92bfe81f9b = $(`<div id="html_8099cda0d878959cd95c1c92bfe81f9b" style="width: 100.0%; height: 100.0%;"><b>BCS4KN</b><br>Country: Germany<br>Altitude: 4550 ft<br>Speed: 238 kts<br>Phase: descending</div>`)[0];
+                popup_bf5c14324cc66100417ed9b26aa10b2a.setContent(html_8099cda0d878959cd95c1c92bfe81f9b);
+            
+        
+
+        circle_marker_debdc321b4f7a253c6fb62e4f65c7352.bindPopup(popup_bf5c14324cc66100417ed9b26aa10b2a)
+        ;
+
+        
+    
+    
+            var circle_marker_30013306d7dbf7f019f6c7f7992e9625 = L.circleMarker(
+                [53.0595, -6.0306],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_45dda5fe1b130b444e63319093c6b3c5 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_c193fc531d20fb8f53ec782d93dacc2c = $(`<div id="html_c193fc531d20fb8f53ec782d93dacc2c" style="width: 100.0%; height: 100.0%;"><b>EZY21BZ</b><br>Country: United Kingdom<br>Altitude: 33027 ft<br>Speed: 412 kts<br>Phase: cruising</div>`)[0];
+                popup_45dda5fe1b130b444e63319093c6b3c5.setContent(html_c193fc531d20fb8f53ec782d93dacc2c);
+            
+        
+
+        circle_marker_30013306d7dbf7f019f6c7f7992e9625.bindPopup(popup_45dda5fe1b130b444e63319093c6b3c5)
+        ;
+
+        
+    
+    
+            var circle_marker_33bc5989d988cb70a57904fb10ae1370 = L.circleMarker(
+                [55.7933, -4.5771],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_69b3fd50b8dafe3c0d726ae0b8e759fa = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b59a0db13ea5e566dd125d4cb244de54 = $(`<div id="html_b59a0db13ea5e566dd125d4cb244de54" style="width: 100.0%; height: 100.0%;"><b>EXS6243</b><br>Country: United Kingdom<br>Altitude: 5975 ft<br>Speed: 236 kts<br>Phase: climbing</div>`)[0];
+                popup_69b3fd50b8dafe3c0d726ae0b8e759fa.setContent(html_b59a0db13ea5e566dd125d4cb244de54);
+            
+        
+
+        circle_marker_33bc5989d988cb70a57904fb10ae1370.bindPopup(popup_69b3fd50b8dafe3c0d726ae0b8e759fa)
+        ;
+
+        
+    
+    
+            var circle_marker_f870b07fc409d3e1ebeb4a355a93bc9e = L.circleMarker(
+                [53.0011, -2.2274],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_e5f45420811b0ebbb4947ae3461a11b1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_054f948a8d597986ff5c30cddbafa833 = $(`<div id="html_054f948a8d597986ff5c30cddbafa833" style="width: 100.0%; height: 100.0%;"><b>EZY68TX</b><br>Country: United Kingdom<br>Altitude: 14551 ft<br>Speed: 313 kts<br>Phase: descending</div>`)[0];
+                popup_e5f45420811b0ebbb4947ae3461a11b1.setContent(html_054f948a8d597986ff5c30cddbafa833);
+            
+        
+
+        circle_marker_f870b07fc409d3e1ebeb4a355a93bc9e.bindPopup(popup_e5f45420811b0ebbb4947ae3461a11b1)
+        ;
+
+        
+    
+    
+            var circle_marker_8ac66a6a4b17f1e0dd48da90a74fca27 = L.circleMarker(
+                [51.4334, 0.3754],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_a816ec8bfdc1ff40f6502890c46e4e58 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e5f8967453fc4cb2a460bb7a12599ae7 = $(`<div id="html_e5f8967453fc4cb2a460bb7a12599ae7" style="width: 100.0%; height: 100.0%;"><b>EZY21YA</b><br>Country: United Kingdom<br>Altitude: 35952 ft<br>Speed: 413 kts<br>Phase: cruising</div>`)[0];
+                popup_a816ec8bfdc1ff40f6502890c46e4e58.setContent(html_e5f8967453fc4cb2a460bb7a12599ae7);
+            
+        
+
+        circle_marker_8ac66a6a4b17f1e0dd48da90a74fca27.bindPopup(popup_a816ec8bfdc1ff40f6502890c46e4e58)
+        ;
+
+        
+    
+    
+            var circle_marker_1dca72c4b21347f5acff5bf7e03f0bee = L.circleMarker(
+                [52.8852, -5.0823],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_1a000fe80558ba1981f06e02e1c0775f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_a6e48b4bc177ceaca24f1788f571a992 = $(`<div id="html_a6e48b4bc177ceaca24f1788f571a992" style="width: 100.0%; height: 100.0%;"><b>RYR9JZ</b><br>Country: Ireland<br>Altitude: 18001 ft<br>Speed: 345 kts<br>Phase: descending</div>`)[0];
+                popup_1a000fe80558ba1981f06e02e1c0775f.setContent(html_a6e48b4bc177ceaca24f1788f571a992);
+            
+        
+
+        circle_marker_1dca72c4b21347f5acff5bf7e03f0bee.bindPopup(popup_1a000fe80558ba1981f06e02e1c0775f)
+        ;
+
+        
+    
+    
+            var circle_marker_bb0246e36dd3223d3059c65a586032e4 = L.circleMarker(
+                [53.4087, -6.0428],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_8d9cbae96265736fa2b3fe1a6bf5d8e1 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_55df49543dbc482e67247500d897bf81 = $(`<div id="html_55df49543dbc482e67247500d897bf81" style="width: 100.0%; height: 100.0%;"><b>RYR28BT</b><br>Country: Ireland<br>Altitude: 2325 ft<br>Speed: 150 kts<br>Phase: descending</div>`)[0];
+                popup_8d9cbae96265736fa2b3fe1a6bf5d8e1.setContent(html_55df49543dbc482e67247500d897bf81);
+            
+        
+
+        circle_marker_bb0246e36dd3223d3059c65a586032e4.bindPopup(popup_8d9cbae96265736fa2b3fe1a6bf5d8e1)
+        ;
+
+        
+    
+    
+            var circle_marker_52b48e4655cac86cb9215d3c56cb990f = L.circleMarker(
+                [51.5215, -2.8466],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_381bfbdd2f7b1b316989d958288a3aa9 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2fb34eaf0e6a0749358a117d28ef6088 = $(`<div id="html_2fb34eaf0e6a0749358a117d28ef6088" style="width: 100.0%; height: 100.0%;"><b>RYR50KC</b><br>Country: Ireland<br>Altitude: 26926 ft<br>Speed: 324 kts<br>Phase: descending</div>`)[0];
+                popup_381bfbdd2f7b1b316989d958288a3aa9.setContent(html_2fb34eaf0e6a0749358a117d28ef6088);
+            
+        
+
+        circle_marker_52b48e4655cac86cb9215d3c56cb990f.bindPopup(popup_381bfbdd2f7b1b316989d958288a3aa9)
+        ;
+
+        
+    
+    
+            var circle_marker_5fa98f8c5fb6f8961bb02728202fc8a8 = L.circleMarker(
+                [53.1669, -6.0183],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_886194bf19c67f0f2d87dc6f7ee71a85 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7fe85cc74fc1dfe95d95213dfed0cbe3 = $(`<div id="html_7fe85cc74fc1dfe95d95213dfed0cbe3" style="width: 100.0%; height: 100.0%;"><b>EIN7JC</b><br>Country: Ireland<br>Altitude: 8025 ft<br>Speed: 285 kts<br>Phase: descending</div>`)[0];
+                popup_886194bf19c67f0f2d87dc6f7ee71a85.setContent(html_7fe85cc74fc1dfe95d95213dfed0cbe3);
+            
+        
+
+        circle_marker_5fa98f8c5fb6f8961bb02728202fc8a8.bindPopup(popup_886194bf19c67f0f2d87dc6f7ee71a85)
+        ;
+
+        
+    
+    
+            var circle_marker_3468d17f72990bff09e12b42e8a75c38 = L.circleMarker(
+                [53.7943, -4.5164],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_314a087c642087304b9b80cec430b1f4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fbc51698f8ed0224a4eb778b586db2e9 = $(`<div id="html_fbc51698f8ed0224a4eb778b586db2e9" style="width: 100.0%; height: 100.0%;"><b>CHG562</b><br>Country: Belgium<br>Altitude: 35002 ft<br>Speed: 583 kts<br>Phase: cruising</div>`)[0];
+                popup_314a087c642087304b9b80cec430b1f4.setContent(html_fbc51698f8ed0224a4eb778b586db2e9);
+            
+        
+
+        circle_marker_3468d17f72990bff09e12b42e8a75c38.bindPopup(popup_314a087c642087304b9b80cec430b1f4)
+        ;
+
+        
+    
+    
+            var circle_marker_c7bfd14b4ad2cff64b0d58509d323620 = L.circleMarker(
+                [49.9888, -1.1643],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_b06df947f5b08d8b3dc38320ed64e539 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_aecdcde8f3cd8845e842111bed794775 = $(`<div id="html_aecdcde8f3cd8845e842111bed794775" style="width: 100.0%; height: 100.0%;"><b>EZY65RM</b><br>Country: United Kingdom<br>Altitude: 37002 ft<br>Speed: 371 kts<br>Phase: cruising</div>`)[0];
+                popup_b06df947f5b08d8b3dc38320ed64e539.setContent(html_aecdcde8f3cd8845e842111bed794775);
+            
+        
+
+        circle_marker_c7bfd14b4ad2cff64b0d58509d323620.bindPopup(popup_b06df947f5b08d8b3dc38320ed64e539)
+        ;
+
+        
+    
+    
+            var circle_marker_73d688ad5b71b444d431d6ac6f662394 = L.circleMarker(
+                [53.0585, -0.1013],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_5b81cdfedd9574f6f7cdf4222759d79f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3f468162646a153fa7fd7cd5e2599cd4 = $(`<div id="html_3f468162646a153fa7fd7cd5e2599cd4" style="width: 100.0%; height: 100.0%;"><b>REV6ND</b><br>Country: United Kingdom<br>Altitude: 7500 ft<br>Speed: 172 kts<br>Phase: cruising</div>`)[0];
+                popup_5b81cdfedd9574f6f7cdf4222759d79f.setContent(html_3f468162646a153fa7fd7cd5e2599cd4);
+            
+        
+
+        circle_marker_73d688ad5b71b444d431d6ac6f662394.bindPopup(popup_5b81cdfedd9574f6f7cdf4222759d79f)
+        ;
+
+        
+    
+    
+            var circle_marker_de76233aa37fcad78fd3f165d7f80e8d = L.circleMarker(
+                [53.3096, -1.97],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_3ceecb2b8e57361195a489fada8bf46a = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7eef70a46e079c4cce6508f43dfe28e9 = $(`<div id="html_7eef70a46e079c4cce6508f43dfe28e9" style="width: 100.0%; height: 100.0%;"><b>EZY92GP</b><br>Country: United Kingdom<br>Altitude: 6350 ft<br>Speed: 261 kts<br>Phase: descending</div>`)[0];
+                popup_3ceecb2b8e57361195a489fada8bf46a.setContent(html_7eef70a46e079c4cce6508f43dfe28e9);
+            
+        
+
+        circle_marker_de76233aa37fcad78fd3f165d7f80e8d.bindPopup(popup_3ceecb2b8e57361195a489fada8bf46a)
+        ;
+
+        
+    
+    
+            var circle_marker_f4da49a0b51d29cfadfb4b16c62562ef = L.circleMarker(
+                [55.626, -3.853],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_cf728faa797cfaf83aa6992f0431fc39 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_79b2897eb82748814e5eefacbae9509c = $(`<div id="html_79b2897eb82748814e5eefacbae9509c" style="width: 100.0%; height: 100.0%;"><b>EZY3192</b><br>Country: United Kingdom<br>Altitude: 8900 ft<br>Speed: 251 kts<br>Phase: descending</div>`)[0];
+                popup_cf728faa797cfaf83aa6992f0431fc39.setContent(html_79b2897eb82748814e5eefacbae9509c);
+            
+        
+
+        circle_marker_f4da49a0b51d29cfadfb4b16c62562ef.bindPopup(popup_cf728faa797cfaf83aa6992f0431fc39)
+        ;
+
+        
+    
+    
+            var circle_marker_fb18e9f56cf840a948de9e64224157bc = L.circleMarker(
+                [51.6396, -7.5347],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_df4ad1b24cae1251a292eb2ddb5d2361 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_4a5b04287e78c79b1735a934059ea9bb = $(`<div id="html_4a5b04287e78c79b1735a934059ea9bb" style="width: 100.0%; height: 100.0%;"><b>TOM80H</b><br>Country: United Kingdom<br>Altitude: 37002 ft<br>Speed: 399 kts<br>Phase: cruising</div>`)[0];
+                popup_df4ad1b24cae1251a292eb2ddb5d2361.setContent(html_4a5b04287e78c79b1735a934059ea9bb);
+            
+        
+
+        circle_marker_fb18e9f56cf840a948de9e64224157bc.bindPopup(popup_df4ad1b24cae1251a292eb2ddb5d2361)
+        ;
+
+        
+    
+    
+            var circle_marker_99f4632d2546d59129f924eafbaafe2a = L.circleMarker(
+                [58.4152, -1.5377],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_9113d45e411938cbb03bc5a0211f8f24 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_09a7e6e53b1ffc0647b5952321211412 = $(`<div id="html_09a7e6e53b1ffc0647b5952321211412" style="width: 100.0%; height: 100.0%;"><b>GMA01C</b><br>Country: United Kingdom<br>Altitude: 19001 ft<br>Speed: 243 kts<br>Phase: cruising</div>`)[0];
+                popup_9113d45e411938cbb03bc5a0211f8f24.setContent(html_09a7e6e53b1ffc0647b5952321211412);
+            
+        
+
+        circle_marker_99f4632d2546d59129f924eafbaafe2a.bindPopup(popup_9113d45e411938cbb03bc5a0211f8f24)
+        ;
+
+        
+    
+    
+            var circle_marker_787b0d87402edafd1ef72d8126f78a75 = L.circleMarker(
+                [55.4872, -4.5302],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_06f8adec12ee708d8bf6a62d71728dd4 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_2b4f6f8307988caf37c1da3071a82b9f = $(`<div id="html_2b4f6f8307988caf37c1da3071a82b9f" style="width: 100.0%; height: 100.0%;"><b>RYR42LJ</b><br>Country: Malta<br>Altitude: 475 ft<br>Speed: 137 kts<br>Phase: descending</div>`)[0];
+                popup_06f8adec12ee708d8bf6a62d71728dd4.setContent(html_2b4f6f8307988caf37c1da3071a82b9f);
+            
+        
+
+        circle_marker_787b0d87402edafd1ef72d8126f78a75.bindPopup(popup_06f8adec12ee708d8bf6a62d71728dd4)
+        ;
+
+        
+    
+    
+            var circle_marker_dc540b914965f40d2963b7b76ab905c1 = L.circleMarker(
+                [49.9912, -1.225],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_cb837e1e6ebf77b3573e2ad7cdd27d57 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_3c892dea652bdc61da93019a9d4d62ed = $(`<div id="html_3c892dea652bdc61da93019a9d4d62ed" style="width: 100.0%; height: 100.0%;"><b>TOM6KD</b><br>Country: United Kingdom<br>Altitude: 33002 ft<br>Speed: 353 kts<br>Phase: cruising</div>`)[0];
+                popup_cb837e1e6ebf77b3573e2ad7cdd27d57.setContent(html_3c892dea652bdc61da93019a9d4d62ed);
+            
+        
+
+        circle_marker_dc540b914965f40d2963b7b76ab905c1.bindPopup(popup_cb837e1e6ebf77b3573e2ad7cdd27d57)
+        ;
+
+        
+    
+    
+            var circle_marker_8bc48157701b0d39f204d1ccbc0b0fe0 = L.circleMarker(
+                [52.3446, -1.011],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_9810b493ce0179f8be55e4d4feb01b10 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_e07445efa9e7d2165c3ad3d7ea2bc04b = $(`<div id="html_e07445efa9e7d2165c3ad3d7ea2bc04b" style="width: 100.0%; height: 100.0%;"><b>RYR65SN</b><br>Country: Ireland<br>Altitude: 12526 ft<br>Speed: 261 kts<br>Phase: descending</div>`)[0];
+                popup_9810b493ce0179f8be55e4d4feb01b10.setContent(html_e07445efa9e7d2165c3ad3d7ea2bc04b);
+            
+        
+
+        circle_marker_8bc48157701b0d39f204d1ccbc0b0fe0.bindPopup(popup_9810b493ce0179f8be55e4d4feb01b10)
+        ;
+
+        
+    
+    
+            var circle_marker_a20aa5ce8409de7db79f641a15f175d5 = L.circleMarker(
+                [53.5011, -4.477],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_c32e242d2b04f4f86f61368465f83740 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_64f7978c085b84d4478652d3ffe705c2 = $(`<div id="html_64f7978c085b84d4478652d3ffe705c2" style="width: 100.0%; height: 100.0%;"><b>EXS78NL</b><br>Country: United Kingdom<br>Altitude: 16951 ft<br>Speed: 399 kts<br>Phase: descending</div>`)[0];
+                popup_c32e242d2b04f4f86f61368465f83740.setContent(html_64f7978c085b84d4478652d3ffe705c2);
+            
+        
+
+        circle_marker_a20aa5ce8409de7db79f641a15f175d5.bindPopup(popup_c32e242d2b04f4f86f61368465f83740)
+        ;
+
+        
+    
+    
+            var circle_marker_c5dc77e7bafe7ce777a8de44f7edcd51 = L.circleMarker(
+                [52.3251, -7.5333],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_878223fa5df2e7e9c9b347c8c856105d = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_6cad740e1e4c1eea52c0ad49a0669ab6 = $(`<div id="html_6cad740e1e4c1eea52c0ad49a0669ab6" style="width: 100.0%; height: 100.0%;"><b>EZY39PQ</b><br>Country: United Kingdom<br>Altitude: 36002 ft<br>Speed: 388 kts<br>Phase: cruising</div>`)[0];
+                popup_878223fa5df2e7e9c9b347c8c856105d.setContent(html_6cad740e1e4c1eea52c0ad49a0669ab6);
+            
+        
+
+        circle_marker_c5dc77e7bafe7ce777a8de44f7edcd51.bindPopup(popup_878223fa5df2e7e9c9b347c8c856105d)
+        ;
+
+        
+    
+    
+            var circle_marker_8f2dbe7ce2f74c6e14b01fd049779501 = L.circleMarker(
+                [53.4516, -2.0668],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_00c02b2d84fe2a0d8f4e95400413de2c = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_d2d34669fbc44e2b74283644b4429aba = $(`<div id="html_d2d34669fbc44e2b74283644b4429aba" style="width: 100.0%; height: 100.0%;"><b>EZY96RL</b><br>Country: United Kingdom<br>Altitude: 2500 ft<br>Speed: 153 kts<br>Phase: descending</div>`)[0];
+                popup_00c02b2d84fe2a0d8f4e95400413de2c.setContent(html_d2d34669fbc44e2b74283644b4429aba);
+            
+        
+
+        circle_marker_8f2dbe7ce2f74c6e14b01fd049779501.bindPopup(popup_00c02b2d84fe2a0d8f4e95400413de2c)
+        ;
+
+        
+    
+    
+            var circle_marker_05346ac1e8ce5479ff71f9d468283b9f = L.circleMarker(
+                [55.7877, -4.5349],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_18582f702e301443dfdbe66b43382100 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b16a42cdcbd97de445f4c6b9ccabf0eb = $(`<div id="html_b16a42cdcbd97de445f4c6b9ccabf0eb" style="width: 100.0%; height: 100.0%;"><b>MASBA</b><br>Country: United Kingdom<br>Altitude: 5200 ft<br>Speed: 221 kts<br>Phase: climbing</div>`)[0];
+                popup_18582f702e301443dfdbe66b43382100.setContent(html_b16a42cdcbd97de445f4c6b9ccabf0eb);
+            
+        
+
+        circle_marker_05346ac1e8ce5479ff71f9d468283b9f.bindPopup(popup_18582f702e301443dfdbe66b43382100)
+        ;
+
+        
+    
+    
+            var circle_marker_13134b44150a986b66c726b759ac68bc = L.circleMarker(
+                [50.6028, 1.7522],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_2b0d123c6c7a28e620478182072b6ddd = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_be73b1f0b05bcb9c78bd5bd084c31c99 = $(`<div id="html_be73b1f0b05bcb9c78bd5bd084c31c99" style="width: 100.0%; height: 100.0%;"><b>RYR15EE</b><br>Country: Malta<br>Altitude: 40002 ft<br>Speed: 415 kts<br>Phase: cruising</div>`)[0];
+                popup_2b0d123c6c7a28e620478182072b6ddd.setContent(html_be73b1f0b05bcb9c78bd5bd084c31c99);
+            
+        
+
+        circle_marker_13134b44150a986b66c726b759ac68bc.bindPopup(popup_2b0d123c6c7a28e620478182072b6ddd)
+        ;
+
+        
+    
+    
+            var circle_marker_29610396fa6e1df6f21a5dd2bf18948b = L.circleMarker(
+                [53.0927, -5.5003],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_260e9a90d826db3724abd364cd0f8937 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_664018abd5ccd5fa11e4d20fdda1cb0b = $(`<div id="html_664018abd5ccd5fa11e4d20fdda1cb0b" style="width: 100.0%; height: 100.0%;"><b>RYR65XE</b><br>Country: Ireland<br>Altitude: 8550 ft<br>Speed: 256 kts<br>Phase: descending</div>`)[0];
+                popup_260e9a90d826db3724abd364cd0f8937.setContent(html_664018abd5ccd5fa11e4d20fdda1cb0b);
+            
+        
+
+        circle_marker_29610396fa6e1df6f21a5dd2bf18948b.bindPopup(popup_260e9a90d826db3724abd364cd0f8937)
+        ;
+
+        
+    
+    
+            var circle_marker_6bb5a339fa42d256a01b4ac012d47604 = L.circleMarker(
+                [55.418, -4.5444],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_a56dfd9cbb47e1c85b53fea2b8b6f368 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_98ab35d6167d6278e70ebbaf03682453 = $(`<div id="html_98ab35d6167d6278e70ebbaf03682453" style="width: 100.0%; height: 100.0%;"><b>EXS52FT</b><br>Country: United Kingdom<br>Altitude: 16076 ft<br>Speed: 311 kts<br>Phase: descending</div>`)[0];
+                popup_a56dfd9cbb47e1c85b53fea2b8b6f368.setContent(html_98ab35d6167d6278e70ebbaf03682453);
+            
+        
+
+        circle_marker_6bb5a339fa42d256a01b4ac012d47604.bindPopup(popup_a56dfd9cbb47e1c85b53fea2b8b6f368)
+        ;
+
+        
+    
+    
+            var circle_marker_9c67278a6fc184a837397ddf6855272d = L.circleMarker(
+                [53.716, -2.5409],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_49f5fe1396ad36cbd0487167d8386647 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_1551355358c7b17cb812e5734b3a980b = $(`<div id="html_1551355358c7b17cb812e5734b3a980b" style="width: 100.0%; height: 100.0%;"><b>EXS23JS</b><br>Country: United Kingdom<br>Altitude: 32277 ft<br>Speed: 423 kts<br>Phase: descending</div>`)[0];
+                popup_49f5fe1396ad36cbd0487167d8386647.setContent(html_1551355358c7b17cb812e5734b3a980b);
+            
+        
+
+        circle_marker_9c67278a6fc184a837397ddf6855272d.bindPopup(popup_49f5fe1396ad36cbd0487167d8386647)
+        ;
+
+        
+    
+    
+            var circle_marker_80897ff8e54d5b7a6f1c82324df3e9aa = L.circleMarker(
+                [51.9744, 0.3693],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_2a82ffc37dd7badae3948e9a0669395b = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_18cce1384973206b5f2d26600b09328f = $(`<div id="html_18cce1384973206b5f2d26600b09328f" style="width: 100.0%; height: 100.0%;"><b>RYR6377</b><br>Country: Ireland<br>Altitude: 2050 ft<br>Speed: 184 kts<br>Phase: descending</div>`)[0];
+                popup_2a82ffc37dd7badae3948e9a0669395b.setContent(html_18cce1384973206b5f2d26600b09328f);
+            
+        
+
+        circle_marker_80897ff8e54d5b7a6f1c82324df3e9aa.bindPopup(popup_2a82ffc37dd7badae3948e9a0669395b)
+        ;
+
+        
+    
+    
+            var circle_marker_c89da6e579e6c022e7ffe9a82f37f7c8 = L.circleMarker(
+                [52.8189, -3.236],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_c5a42d8070ee07d051a97060c072e019 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_0cd4485b64e0666b6e3a592ec5764fbf = $(`<div id="html_0cd4485b64e0666b6e3a592ec5764fbf" style="width: 100.0%; height: 100.0%;"><b>RYR374R</b><br>Country: Malta<br>Altitude: 11626 ft<br>Speed: 347 kts<br>Phase: descending</div>`)[0];
+                popup_c5a42d8070ee07d051a97060c072e019.setContent(html_0cd4485b64e0666b6e3a592ec5764fbf);
+            
+        
+
+        circle_marker_c89da6e579e6c022e7ffe9a82f37f7c8.bindPopup(popup_c5a42d8070ee07d051a97060c072e019)
+        ;
+
+        
+    
+    
+            var circle_marker_01298f922515f1f7f67a0dc14008bab1 = L.circleMarker(
+                [53.4157, -6.1674],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_f63bbe965160cee3b1a70de2d0f3d65e = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fadd59ff19eeda6ae1f80a914d307526 = $(`<div id="html_fadd59ff19eeda6ae1f80a914d307526" style="width: 100.0%; height: 100.0%;"><b>RYR99WE</b><br>Country: Ireland<br>Altitude: 800 ft<br>Speed: 125 kts<br>Phase: descending</div>`)[0];
+                popup_f63bbe965160cee3b1a70de2d0f3d65e.setContent(html_fadd59ff19eeda6ae1f80a914d307526);
+            
+        
+
+        circle_marker_01298f922515f1f7f67a0dc14008bab1.bindPopup(popup_f63bbe965160cee3b1a70de2d0f3d65e)
+        ;
+
+        
+    
+    
+            var circle_marker_387ab1b5c186f9b7541c5485b93f0db2 = L.circleMarker(
+                [53.42, -6.2453],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_1fcdc76ce3acf9b7217ff1ec5add1e53 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_401d9cbdf56f07a51b9f5d825187987c = $(`<div id="html_401d9cbdf56f07a51b9f5d825187987c" style="width: 100.0%; height: 100.0%;"><b>RYR329</b><br>Country: Ireland<br>Altitude: -150 ft<br>Speed: 119 kts<br>Phase: descending</div>`)[0];
+                popup_1fcdc76ce3acf9b7217ff1ec5add1e53.setContent(html_401d9cbdf56f07a51b9f5d825187987c);
+            
+        
+
+        circle_marker_387ab1b5c186f9b7541c5485b93f0db2.bindPopup(popup_1fcdc76ce3acf9b7217ff1ec5add1e53)
+        ;
+
+        
+    
+    
+            var circle_marker_5cbb8b000eb472cdd0f9fb2f070aeba2 = L.circleMarker(
+                [52.9521, -4.2056],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_6b94e7869f007afeb7d7f3dc26341866 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_139bcaddc0766b9c047e3b2690ec98c7 = $(`<div id="html_139bcaddc0766b9c047e3b2690ec98c7" style="width: 100.0%; height: 100.0%;"><b>HLE67</b><br>Country: United Kingdom<br>Altitude: 2125 ft<br>Speed: 133 kts<br>Phase: climbing</div>`)[0];
+                popup_6b94e7869f007afeb7d7f3dc26341866.setContent(html_139bcaddc0766b9c047e3b2690ec98c7);
+            
+        
+
+        circle_marker_5cbb8b000eb472cdd0f9fb2f070aeba2.bindPopup(popup_6b94e7869f007afeb7d7f3dc26341866)
+        ;
+
+        
+    
+    
+            var circle_marker_0fd81c91bdbc2f85f3198344837f48ba = L.circleMarker(
+                [51.2721, 0.8443],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_8c4a9d7ec227f1c18f2d04b133dbceb7 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_f448a5035af80204605b7825cbf1051b = $(`<div id="html_f448a5035af80204605b7825cbf1051b" style="width: 100.0%; height: 100.0%;"><b>MSR986</b><br>Country: Egypt<br>Altitude: 35002 ft<br>Speed: 515 kts<br>Phase: cruising</div>`)[0];
+                popup_8c4a9d7ec227f1c18f2d04b133dbceb7.setContent(html_f448a5035af80204605b7825cbf1051b);
+            
+        
+
+        circle_marker_0fd81c91bdbc2f85f3198344837f48ba.bindPopup(popup_8c4a9d7ec227f1c18f2d04b133dbceb7)
+        ;
+
+        
+    
+    
+            var circle_marker_93a2acf4c76093407d4585294a84eaa8 = L.circleMarker(
+                [51.1631, -8.0136],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_38989d61b8fa7c45ae2422ab60a42ab6 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b3735c110b1fb469b9a446afe440188e = $(`<div id="html_b3735c110b1fb469b9a446afe440188e" style="width: 100.0%; height: 100.0%;"><b>TOM3LJ</b><br>Country: United Kingdom<br>Altitude: 37002 ft<br>Speed: 394 kts<br>Phase: cruising</div>`)[0];
+                popup_38989d61b8fa7c45ae2422ab60a42ab6.setContent(html_b3735c110b1fb469b9a446afe440188e);
+            
+        
+
+        circle_marker_93a2acf4c76093407d4585294a84eaa8.bindPopup(popup_38989d61b8fa7c45ae2422ab60a42ab6)
+        ;
+
+        
+    
+    
+            var circle_marker_1c08abd3e7eadf3d25bfaa22d27e9182 = L.circleMarker(
+                [52.1362, -2.1075],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_ccbdef91bc7e6e7b7d2f4433ee4f7975 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_73cb20948da6705c25a34eb6294f7844 = $(`<div id="html_73cb20948da6705c25a34eb6294f7844" style="width: 100.0%; height: 100.0%;"><b>EXS1258</b><br>Country: United Kingdom<br>Altitude: 8875 ft<br>Speed: 282 kts<br>Phase: descending</div>`)[0];
+                popup_ccbdef91bc7e6e7b7d2f4433ee4f7975.setContent(html_73cb20948da6705c25a34eb6294f7844);
+            
+        
+
+        circle_marker_1c08abd3e7eadf3d25bfaa22d27e9182.bindPopup(popup_ccbdef91bc7e6e7b7d2f4433ee4f7975)
+        ;
+
+        
+    
+    
+            var circle_marker_a1ddafacb2d88d51fb9a2a1c092faaa7 = L.circleMarker(
+                [51.2734, -4.3892],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_5cd69befa1045b293b3779abbd709957 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_7b727f064279a1d86fdba0a803128cbb = $(`<div id="html_7b727f064279a1d86fdba0a803128cbb" style="width: 100.0%; height: 100.0%;"><b>EXS65KJ</b><br>Country: United Kingdom<br>Altitude: 29401 ft<br>Speed: 367 kts<br>Phase: descending</div>`)[0];
+                popup_5cd69befa1045b293b3779abbd709957.setContent(html_7b727f064279a1d86fdba0a803128cbb);
+            
+        
+
+        circle_marker_a1ddafacb2d88d51fb9a2a1c092faaa7.bindPopup(popup_5cd69befa1045b293b3779abbd709957)
+        ;
+
+        
+    
+    
+            var circle_marker_d4820acff9a204effbb980fa15b90ccc = L.circleMarker(
+                [57.1239, -5.8395],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.8, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6, "stroke": true, "weight": 3}
+            ).addTo(map_fc0a709b7bafc342ea51d97eb92203ed);
+        
+    
+        var popup_4402ab3eeac889c801c3cef371affb99 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_52bfa2c1c6b03a559045a658e4935d15 = $(`<div id="html_52bfa2c1c6b03a559045a658e4935d15" style="width: 100.0%; height: 100.0%;"><b>EZY29DJ</b><br>Country: United Kingdom<br>Altitude: 35002 ft<br>Speed: 530 kts<br>Phase: cruising</div>`)[0];
+                popup_4402ab3eeac889c801c3cef371affb99.setContent(html_52bfa2c1c6b03a559045a658e4935d15);
+            
+        
+
+        circle_marker_d4820acff9a204effbb980fa15b90ccc.bindPopup(popup_4402ab3eeac889c801c3cef371affb99)
+        ;
+
+        
+    
+</script>
+</html>
